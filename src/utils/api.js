@@ -11,7 +11,7 @@ export default async function getPosts() {
 }
 
 
-export default async function getUser(id) {
+export  async function getUser(id) {
     try {
         const res = await fetch(`${URL}/users/${id}`)
         const data = res.json();
@@ -22,7 +22,7 @@ export default async function getUser(id) {
     
 }
 
-export default async function getUserPosts(userId = 1) {
+export  async function getUserPosts(userId = 1) {
     try {
         // usando un query para buscar los post del usuario 1
     const res = await fetch(`${URL}/posts?userId=${userId}`)
