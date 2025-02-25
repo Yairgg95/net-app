@@ -1,6 +1,6 @@
 const URL = "https://jsonplaceholder.typicode.com";
 
-export default async function getPosts() {
+export async function getPosts() {
   try {
     const res = await fetch(`${URL}/posts`);
     const data = res.json();
